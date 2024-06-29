@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2f1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: #4db6ac;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    display: inline;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover:after,
+.nav a.active:after {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 1000;
+}
+
+.profile img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.banner-container {
+    max-width: 100%;
+    max-height: 200px;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid whitesmoke;
+    margin-top: 55px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.upload-btn {
+    background-color: #ffffff;
+    color: #008080;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upload-btn:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.profile-asep {
+    position: absolute;
+    bottom: 410px;
+    left: 25px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    cursor: pointer;
+}
+
+.profile-form {
+    max-width: 100%;
+    height: 100%;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cogan {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="password"] {
+    width: calc(95% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.profile-buttons button {
+    padding: 20px 70px;
+    border: none;
+    border-radius: 50px;
+    border: 2px solid gray;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-story {
+    background-color: #90EE90;
+    color: black;
+}
+
+.btn-payment {
+    background-color: #90EE90;
+    color: black;
+}
+
+.btn-favorite {
+    background-color: #90EE90;
+    color: black;
+}
+
+.btn-reset {
+    background-color: #ADD8E6;
+    color: black;
+}
+
+.btn-logout {
+    background-color: #F08080;
+    color: black;
+}
